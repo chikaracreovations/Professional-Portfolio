@@ -47,4 +47,4 @@ This is a responsive, full-stack developer portfolio website built to showcase p
 ## Live Demo
 
 Check out the live version of this portfolio here:  
-[https://your-portfolio-domain.com](https://chikaracreovations.github.io/Professional-Portfolio/public/index.html)
+[https://portfolio-chikara-creovations.com](https://chikaracreovations.github.io/Professional-Portfolio/public/index.html)
