@@ -36,19 +36,15 @@ This is a responsive, full-stack developer portfolio website built to showcase p
 
 ## Projects Included
 
-1. **Journaling Website** – Secure personal journal using Firebase
-2. **Demo E-Commerce Store** – Firebase backend + Razorpay payments
-3. **Nyra (AI Assistant)** – AI-powered virtual assistant using OpenRouter
-4. **Doodle Board** – Browser-based drawing tool
-5. **Collaborative Whiteboard** – Real-time canvas with WebSocket
+1. **Journaling Website** – Secure personal journal using Firebase  
+2. **Demo E-Commerce Store** – Firebase backend + Razorpay payments  
+3. **Nyra (AI Assistant)** – AI-powered virtual assistant using OpenRouter  
+4. **Doodle Board** – Browser-based drawing tool  
+5. **Collaborative Whiteboard** – Real-time canvas with WebSocket  
 
 ---
 
-## Setup Instructions
+## Live Demo
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-   
-   
+Check out the live version of this portfolio here:  
+[https://your-portfolio-domain.com](https://chikaracreovations.github.io/Professional-Portfolio/public/index.html)
