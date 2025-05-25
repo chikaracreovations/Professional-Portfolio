@@ -1,0 +1,607 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #850505, #4a4a4a);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/white-paper.png');
+            opacity: 0.1;
+            z-index: 1;
+        }
+         h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 10px;
+        }
+
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .hero {
+            padding: 50px 0;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(3px);
+        }
+
+
+
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            justify-content: center;
+            
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border: 3px solid #4a4a4a;
+            transition: transform 0.3s;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio, .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .portfolio-item, .service-item {
+            background: rgba(255, 255, 255, 0.1);
+            background: linear-gradient(135deg, #4a4c45, #4a4a4a);
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            width: auto;
+          
+                align-items: center; 
+          
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover, .service-item:hover {
+            transform: scale(1.01);
+        }
+        
+                #portfolio h3 {
+          
+            font-size: 1.1rem;
+            color: #ee6367;
+        }
+        
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+.service-item {
+    width: calc(100% );
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #1abc9c;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden; /* Hide overflow */
+    max-height: 300px; /* Limit height */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.service-item:hover {
+    transform: translateY(-15px);
+}
+
+
+        .blog-posts {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-posts article {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #1abc9c;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+                form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input,
+        form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 0.7rem;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #555;
+        }
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            margin: 0 5px;
+            color: #333;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+  
+        p1 {
+    font-size: 10px; /* A small size, but more readable */
+    color: #666; /* A muted color for less emphasis */
+    line-height: 1.4; /* Slightly increased line height for better readability */
+    margin: 0; /* Remove default margin */
+    font-weight: normal; /* Normal weight for subtlety */
+}
+
+p2 {
+  
+  font-size: 12px; 
+
+  
+}
+
+.background-image {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ10az5pMww9DGmswWaJ3own2b6K28hGjEQPA&usqp=CAU"); /* URL of the image */
+    background-size: cover; /* Scales the image to cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%; /* Set the width as needed */
+    height: 300px; /* Set the height as needed */
+     overflow-y: auto; /* Add scrolling if content exceeds height */
+}
+
+
+#testimonials {
+  text-align: center;
+  color: #ffffff; /* Example color to contrast with the background */
+  padding: 20px;
+  margin: auto;
+}
+
+#reviewsSection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between testimonials */
+}
+
+.testimonial {
+  border-left: 4px solid #1abc9c; /* Example green border */
+  background: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
+  color: #fff;
+  bordborder-radius: 5px;
+  padding: 10px 15px;
+  text-align: left;
+  font-style: italic;
+}
+
+
+.testimonial p {
+  font-size: 1.2em;
+}
+
+.testimonial strong {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+}
+
+
+
+.sticky-notes-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    
+    
+    
+}
+
+
+
+.swiper-container {
+    height: auto;/* Adjust height as needed */
+    overflow: hidden; /* Prevents scrolling of the entire page */
+    width: 100%
+}
+
+
+
+
+
+.swiper-slide {
+    display: flex; /* Center content */
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; /* Fill container */
+    text-align: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1);
+            background: linear-gradient(135deg, #4a4c45, #4a4a4a);
+            border-radius: 10px;
+    
+    
+    
+    
+}
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: dimgrey  !important; /* Change the color to your desired value */
+    position: absolute; /* Position relative to swiper-container */
+    bottom: 20px; /* Position buttons at the bottom */
+    z-index: 10; /* Bring buttons above other content */
+    font-size: 2% !important ; /* Optional: Adjust size */
+    transition: color 0.3s ease; /* Add a smooth transition for hover effects */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: grey; /* Change color on hover */
+}
+
+
+.swiper-button-next {
+    right: -0.25% !important; /* Move next button further to the right */
+}
+
+.swiper-button-prev {
+    left: -0.25% !important; /* Move previous button further to the left */
+}
+
+.swiper-pagination {
+    position: absolute; /* Position relative to container */
+    bottom: 60px; /* Position above navigation buttons */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* News and Updates Section */
+#news-updates-section {
+    padding: 20px;
+    background-image: url('../images/news.jpg'); /* Replace with your image URL */
+    background-size: cover;  /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Set text color to white for better contrast on dark background */
+    border-radius: 0px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+}
+
+
+
+#news-updates-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    opacity: 0.7;
+}
+
+.news-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #4CAF50; /* Green highlight for news items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.news-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-text {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    font-weight: 500;
+}
+
+
+
+
+.resume-link a {
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Optional: make text bold */
+    font-size: 16px; /* Optional: adjust font size */
+}
+
+
+/* Tech Stack Section */
+.tech-stack-section {
+    background: #0a0a0a;
+    padding: 5px 0px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+/* Heading */
+.tech-stack-heading {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+/* Marquee Container */
+.marquee {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height:105px;
+    white-space: nowrap;
+}
+
+/* Inner Content (Duplicates for Seamless Loop) */
+.marquee-content {
+    display: flex;
+    gap: 30px;
+}
+
+/* Individual Tech Card */
+.tech-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Tech Icons */
+.tech-card img {
+    width: 60px;
+    height: 60px;
+}
+
+/* No Hover Pause */
+.marquee-content:hover {
+    animation-play-state: running !important; /* Prevents stopping */
+}
+.cloned {
+    margin-left: 30px; /* Creates space between original and cloned set */
+}
+
+
+
+.button-container {
+  display: flex;
+  margin-left:13.5%;
+}
+
+.ctc-button {
+  color: white;
+  padding: 4px 10px;
+  font-size: 14px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+  transition: background-color 0.3s ease;
+ 
+}
+
+.ctc-button:hover {
+  background-color: lightgrey;
+}
+
+.rocket {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  opacity: 0.8;
+  animation: flyRocket 0s ease-out forwards;
+}
+
+@keyframes flyRocket {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(300px, -500px) rotate(45deg);
+    opacity: 0;
+  }
+}
+.certificates-section {
+  padding: 1rem;
+  text-align: center;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem; /* horizontal spacing */
+  row-gap: 3rem;    /* vertical spacing */
+  margin-top: 1rem;
+  max-width: 800px;
+  max-height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .certificates-grid {
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+}
+
+
+.certificates-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-all {
+  margin-top: 1.5rem;
+}
+
+.view-all a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+

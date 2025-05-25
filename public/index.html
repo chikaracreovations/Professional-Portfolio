@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chikara Creovations Portfolio</title>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> 
+ <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+ 
+ 
+   <script src = "js/marque.js" ></script>
+   <script type="module" src="js/firebase.js"></script>
+   <script src ="js/news.js" defer></script>
+<script src ="js/email.js" defer></script>
+<script src="js/swiper.js" defer></script>
+
+</head>
+
+<body>
+  
+    <header>
+      
+        <div class="logo">
+            <h1>Chikara Creovations</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2>Innovating Ideas, Creating Impact</h2>
+        </div>
+
+  <img src="rocket1.png" class="rocket" alt="Rocket" />
+ 
+
+
+    </header>
+
+
+
+    <section id="about">
+        <h2>About Me</h2>
+        
+        <br>
+        
+<div class="about-content">
+  <div class="image-and-button">
+    <img src="https://media.tenor.com/GfSX-u7VGM4AAAAM/coding.gif" class="profile-pic" alt="Description of the GIF">
+    <div class = "button-container">
+    <a href="path/to/your_resume.pdf" class="ctc-button" target="_blank"><u></u>View Resume</u></a> </div>
+  </div>
+
+  <p>"Professionally grounded, battle-tested, and driven by passion and relentless curiosity."</p>
+</div>
+           <p>
+I'm a UI/UX designer and full-stack web developer focused on creating dynamic, user-friendly digital experiences. <br>
+Rather than limiting myself to a fixed syllabus, I learned through real-world problem-solving—breaking things, fixing them, and understanding what truly makes the web work. <br>
+My skillset isn't tied to a single stack or fleeting trend. Instead, I've built deep expertise through hands-on projects, continuous learning, and staying up-to-date with modern development practices. <br>
+I specialize in crafting responsive, high-performance websites that blend functionality with clean, intuitive design.
+</p>
+
+        </div>
+        <br>
+        
+        <h3>Values & Mission</h3>
+      
+        <p>"Unbound by titles, defined by passion."
+</p>
+
+<br />
+
+
+    </section>
+    
+  <section class="tech-stack-section">
+    <h2 class="tech-stack-heading">Tech Stack</h2>
+
+    <div class="marquee">
+        <div class="marquee-content">
+            <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div>
+            <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"></div>
+            <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
+            <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"></div>
+            <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL"></div>
+            <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"></div>
+            <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"></div>
+            <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"></div>
+        </div>
+    </div>
+</section>    
+    
+    <section id="portfolio">
+             <div class="portfolio">
+        <h2>Portfolio/Projects</h2>
+        
+        
+        
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Swiper Container -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <!-- Slide 1 -->
+   <div class="swiper-slide">
+      <!-- Content for Slide 1 -->
+
+            <div class="portfolio-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvOyeizDhwsYT6zuwrxvk1TjfJqI0YqT1lmQ&usqp=CAU" alt="Project 1">
+                <h3>Journaling Website</h3>
+                <p>A personal journal website where users can log their thoughts and reflections securely. This project utilizes Firebase authentication and Firestore for data storage.</p>
+                <br>
+                
+                <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Google firebase</p>
+                <br>
+                <a href="https://chikaracreovations.github.io/Calming-Journal/firebasejournalip2.html" class="btn">View Project</a>
+            </div> 
+     
+     
+    </div>
+   
+<div class="swiper-slide">
+  <div class="portfolio-item">
+    <img src="images/ds.jpg" alt="Project: The Demo Store" class="portfolio-image">
+
+    <div class="portfolio-content">
+      <h3>The Demo Store</h3>
+      <p>
+        A fully functional, customizable e-commerce platform designed for showcasing in a developer portfolio. It features a modern UI, seamless navigation, smooth cart and checkout processes, and an intuitive user experience.
+      </p>
+      <p>
+        Built with Firebase for backend and order management, integrated with Razorpay for secure payments, and uses EmailJS to automate order confirmation emails.
+      </p>
+      <br>
+      
+      <p><strong>Technologies Used:</strong><br>
+        <strong>Frontend:</strong> HTML, CSS, JavaScript<br>
+        <strong>UI Libraries:</strong> Swiper.js, GSAP, FontAwesome<br>
+        <strong>Backend:</strong> Firebase<br>
+        <strong>Payments:</strong> Razorpay<br>
+        <strong>Email:</strong> EmailJS
+      </p>
+      <br>
+      <a href="https://chikaracreovations.github.io/The-Demo-Store/index.html" class="btn">View Project</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="swiper-slide">
+  <div class="portfolio-item">
+    <img src="https://i.pinimg.com/originals/ae/d1/1d/aed11d6975231b91c8e992c02b8376da.gif" alt="Nyra - Virtual AI Assistant" class="portfolio-image">
+
+    <div class="portfolio-content">
+      <h3>Naira - Virtual AI Assistant</h3>
+      <p>
+        Naira is a web-based AI assistant that supports both voice and text interaction. Featuring a futuristic UI with a glowing core animation, it enables real-time, intelligent conversations using Mistral-7B-Instruct via OpenRouter.
+      </p>
+     
+     
+     <br>
+     
+      
+      <p><strong>Technologies Used:</strong><br>
+        <strong>Frontend:</strong> HTML, CSS, JavaScript<br>
+        <strong>UI Libraries:</strong> Web Speech API, FontAwesome, Swiper.js<br>
+        <strong>AI Backend:</strong> DeepSeek V3 0324 (OpenRouter)<br>
+        <strong>Backend & Hosting:</strong> Node.js (Cloudflare), Netlify<br>
+        <strong>Version Control:</strong> GitHub
+      </p>
+      <br>
+      <a href="https://fridayaiassistant.netlify.app/" class="btn">View Project</a>
+    </div>
+  </div>
+</div>
+ 
+<div class="swiper-slide">
+  <div class="portfolio-item">
+    <img src="images/db.jpg" alt="Project: Doodle Board" class="portfolio-image">
+
+    <div class="portfolio-content">
+      <h3>Doodle Board</h3>
+      <p>
+        A lightweight, browser-based whiteboard application designed for solo use. It allows users to draw, erase, save, and load sketches directly within their browser, offering a smooth, responsive interface optimized for both mouse and touch input.
+</p>
+      <br>
+      
+      <p><strong>Technologies Used:</strong><br>
+  <strong>Frontend:</strong> HTML, CSS, JavaScript<br>
+  <strong>Canvas & Graphics:</strong> HTML5 Canvas API<br>
+  <strong>State Management:</strong> Vanilla JavaScript (custom undo/redo stack)<br>
+  <strong>File Handling:</strong> FileReader API, Canvas toDataURL<br>
+  <strong>Touch Support:</strong> Touch Events API
+</p>
+      <br>
+      <a href="https://chikaracreovations.github.io/Doodle-Board/index.html" class="btn">View Project</a>
+    </div>
+  </div>
+</div>
+
+<div class="swiper-slide">
+  <div class="portfolio-item">
+    <img src="images/cbwb.jpg" alt="Project: Collaborative Whiteboard" class="portfolio-image">
+
+    <div class="portfolio-content">
+      <h3>Collaborative Whiteboard</h3>
+      <p>
+        A real-time collaborative whiteboard enabling multiple users to draw simultaneously on a shared canvas. Designed for smooth, low-latency drawing experiences across devices using WebSockets for live communication.
+      </p>
+      <br>
+
+      <p><strong>Technologies Used:</strong><br>
+        <strong>Frontend:</strong> HTML, CSS, JavaScript<br>
+        <strong>Canvas & Graphics:</strong> HTML5 Canvas API<br>
+        <strong>Backend:</strong> Node.js, Express, WebSocket (WS)<br>
+        <strong>Real-time Sync:</strong> WebSockets with custom session handling<br>
+        <strong>Deployment:</strong> GitHub, Render
+      </p>
+      <br>
+      <a href="https://chikaracreovations.github.io/Collaborative-Doodle-Board/main.html" class="btn">View Project</a>
+    </div>
+  </div>
+</div>
+
+    
+    
+  </div>
+  <!-- Add Swiper navigation buttons -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <!-- Add Swiper pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+
+
+
+        
+     
+           
+
+        </div>
+    </section>
+    
+    <section id="certificates" class="certificates-section">
+  <h2>Certificates</h2>
+  <br />
+  <div class="certificates-grid">
+    <img src="images/c1.jpg" alt="Certificate 1">
+    <img src="images/c2.jpg" alt="Certificate 2">
+    <img src="images/c3.jpg" alt="Certificate 3">
+    <img src="images/c4.jpg" alt="Certificate 4">
+  </div>
+  <div class="view-all">
+    <a href="certificates.html">View All Certificates</a>
+  </div>
+</section>
+    
+        <section id="services">
+        <h2>Skills</h2>
+        
+        <p1> I am currently in the process of gaining valuable experience and skills in the field. Your support and feedback during this phase are greatly appreciated. </p1>
+        
+        <br><br>
+        
+        <div class="services-list">
+            <div class="service-item">
+  
+              
+               <h3>Website Development</h3>
+                <p>Creating responsive and visually appealing websites.
+  Building landing pages for products or services.</p>
+            </div>
+            <div class="service-item">
+                <h3>Web Application Development
+</h3>
+                <p>Developing interactive web applications using JavaScript frameworks (like React, Vue.js, or Angular).</p>
+            </div>
+            <div class="service-item">
+                <h3>Firebase Integration
+</h3>
+                <p>Setting up user authentication (sign-up/login) with Firebase Authentication.
+Managing data storage and retrieval using Firebase Firestore or Realtime Database.
+</p>
+            </div>
+    
+    
+    
+                <div class="service-item">
+                <h3>Additional Skills</h3>
+                
+                <p><li>Portfolio Development: Help clients build their own portfolio websites.</li>
+
+<li>E-commerce Solutions: Set up simple e-commerce sites using Firebase for inventory management and order tracking.</li>
+
+<li>Interactive Dashboards: Create dashboards to visualize data using JavaScript libraries</li>
+</p>
+            </div>
+            
+        </div>
+    </section>
+    
+    </section>
+  
+    <div class="background-image">
+  <section id="testimonials">
+    <h2>Friend and Peer Feedback</h2>
+    <h3>"Have a Moment? I'd Love Your Review!"</h3>
+    
+        <!-- Button to open review modal -->
+    <button id="sendReviewBtn">Leave a Review</button>
+
+    <!-- Reviews Section (will be dynamically populated from Firestore) -->
+    <div id="reviewsSection">
+      <!-- Initial example testimonials -->
+      <div class="testimonial">
+        <p>Great work, keep it up!</p>
+        <strong>- John Doe</strong>
+      </div>
+      <div class="testimonial">
+        <p>Amazing experience, highly recommended.</p>
+        <strong>- Jane Smith</strong>
+      </div>
+    </div>
+
+
+  </section>
+</div>
+
+        <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-posts">
+            <article>
+                <h3>"The Day I Finally Quit Procrastination"</h3>
+                
+                <p>In this blog, I share the struggles, breakthroughs, and strategies I used to break free from procrastination and regain control over my time. Whether you're battling the same issue or just curious about the experience, this post highlights the mindset shift and practical steps that made the difference.
+
+                
+                <a href="1.html">Read more</a></p>
+            </article>
+            <article>
+                <h3>Are We on the Brink of AGI?</h3>
+                <p>As we stand at the precipice of creating machines that could rival human intelligence, we face critical questions: What happens if we succeed? <a href="0.html">Read more</a></p>
+            </article>
+        </div>
+    </section>
+  
+  <!-- News and Updates Section -->
+<div id="news-updates-section">
+    <h2>News & Updates</h2>
+    <div class="news-list">
+        <div class="news-item">
+            <p class="news-text">New feature coming soon! Stay tuned for more details.</p>
+        </div>
+        <div class="news-item">
+            <p class="news-text">Our latest update improves speed and stability. Update now!</p>
+        </div>
+        <!-- Add more news items here as needed -->
+    </div>
+</div>
+    
+        <section id="contact">
+        <h2>Contact Me</h2>
+"Reach Out for Collaboration,Feedback, or to Bring Your Innovative Ideas to Life!"
+
+
+
+        
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="social-media">
+            <h3>Follow Me</h3>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+    
+       </section>
+
+    <footer>
+        <p>&copy; 2024 Chikara Creovations. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>  
+
+   
+   
+
+
+
+
+    
+    

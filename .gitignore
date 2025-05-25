@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Log files
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build and cache
+dist/
+.cache/
+.next/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
