@@ -5,7 +5,7 @@ document.querySelector("form").addEventListener("submit", function(event) {
   const email = document.querySelector("#email").value;
   const message = document.querySelector("#message").value;
 
-  fetch("https://your-render-url.onrender.com/send-email", {
+  fetch("https://professional-portfolio-emailjs.onrender.com/send-email", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, email, message }),
