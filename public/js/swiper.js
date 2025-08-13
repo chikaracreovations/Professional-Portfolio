@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 1,
     spaceBetween: 200,
     breakpoints: {
-      768: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
       1024: { slidesPerView: 3 },
     }
   });
@@ -60,3 +60,23 @@ document.addEventListener("DOMContentLoaded", function () {
     swiper.update();
   });
 });
+
+const heading = document.getElementById('scramble-heading');
+const originalText = heading.textContent;
+
+// Wrap each letter in a span
+heading.innerHTML = originalText.split('')
+  .map(char => `<span>${char}</span>`)
+  .join('');
+
+const letters = heading.querySelectorAll('span');
+
+function fallLetters() {
+  letters.forEach((span, i) => {
+    setTimeout(() => {
+      span.classList.add('fall');
+    }, i * 100); // delay between each letter falling
+  });
+}
+
+fallLetters();

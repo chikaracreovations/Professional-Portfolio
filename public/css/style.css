@@ -39,7 +39,23 @@
             margin-bottom: 10px;
         }
         
-        
+        h3 {
+  display: inline-block;
+ 
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.fall {
+  display: inline-block;
+  animation: fall 6s forwards;
+}
+
+@keyframes fall {
+  70% { transform: translateY(100px) rotate(60deg); opacity: 0; }
+  50% { transform: translateY(250px) rotate(30deg); opacity: 1; }
+  
+}
     
 
 
@@ -634,4 +650,10 @@ p2 {
   float: right;
   font-size: 20px;
   cursor: pointer;
+}
+
+#categoryFilter {
+  display: block;        /* make it a block element */
+  margin: 0 auto;        /* center horizontally */
+  font-size: 16px;
 }
