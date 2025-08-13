@@ -655,5 +655,31 @@ p2 {
 #categoryFilter {
   display: block;        /* make it a block element */
   margin: 0 auto;        /* center horizontally */
-  font-size: 16px;
+  font-size: 13px;
+  color:white;
+  background-color: black;
+}
+
+.fog-section {
+  position: relative; /* important so ::after is positioned relative to this section */
+  z-index: 0; /* make sure content appears above fog */
+}
+
+.fog-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/fog.gif') repeat;
+  opacity: 0.02;
+  pointer-events: none;
+  animation: fogMove 8s infinite linear;
+  z-index: -1; /* keep fog behind content */
+}
+
+@keyframes fogMove {
+  from { background-position: 0 0; }
+  to { background-position: 100% 100%; }
 }
