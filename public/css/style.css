@@ -683,3 +683,339 @@ p2 {
   from { background-position: 0 0; }
   to { background-position: 100% 100%; }
 }
+
+/* ==========================================================================
+   PREMIUM AESTHETIC & INTERACTIVE UPGRADES
+   ========================================================================== */
+
+/* Typography & Global Resets */
+body {
+    font-family: 'Inter', sans-serif !important;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6, .modal-title, .tech-stack-heading {
+    font-family: 'Space Grotesk', sans-serif !important;
+    letter-spacing: -0.02em;
+}
+
+::selection {
+    background-color: rgba(0, 255, 255, 0.2);
+    color: #00ffff;
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #850505, #111111);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #a60707, #222222);
+}
+
+/* Social Media Contrast Fix */
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media a {
+    color: rgba(255, 255, 255, 0.65) !important;
+    font-size: 1.8em;
+    margin: 0 12px;
+    display: inline-block;
+    transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), text-shadow 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #00ffff !important;
+    transform: translateY(-4px) scale(1.15);
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+/* Certificates Grid Glow */
+.certificates-grid img {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.certificates-grid img:hover {
+    transform: scale(1.04) translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 255, 255, 0.2), 0 0 15px rgba(133, 5, 5, 0.15);
+    border-color: rgba(0, 255, 255, 0.3);
+}
+
+/* "Leave a Review" Button Styling */
+#sendReviewBtn {
+    background: linear-gradient(135deg, #850505, #4a0000);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(133, 5, 5, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+#sendReviewBtn:hover {
+    background: linear-gradient(135deg, #a60707, #600000);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 22px rgba(133, 5, 5, 0.6), 0 0 12px rgba(0, 255, 255, 0.25);
+}
+
+#sendReviewBtn:active {
+    transform: translateY(0);
+}
+
+/* Custom Frosted-Glass Modal */
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: opacity 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+/* When displayed, js will set this display to grid or flex to active centering */
+.custom-modal-content {
+    background: rgba(10, 10, 10, 0.9);
+    padding: 35px 30px;
+    border: 1px solid rgba(0, 255, 255, 0.25);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 20px 50px rgba(0, 255, 255, 0.15), 0 0 15px rgba(133, 5, 5, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: relative;
+    color: #ffffff;
+    animation: modalSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalSlideUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.custom-modal-close {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.custom-modal-close:hover {
+    color: #00ffff;
+    transform: rotate(90deg);
+}
+
+.modal-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    background: linear-gradient(135deg, #ffffff, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.modal-subtitle {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #00ffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: #00ffff;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.25);
+}
+
+.modal-submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #850505, #550000);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(133, 5, 5, 0.35);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.modal-submit-btn:hover {
+    background: linear-gradient(135deg, #a60707, #730000);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(133, 5, 5, 0.55), 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.modal-submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Custom Toast Notifications */
+.toast-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100000;
+    pointer-events: none;
+}
+
+.toast {
+    pointer-events: auto;
+    min-width: 320px;
+    max-width: 420px;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px 20px;
+    color: #ffffff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 1px rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transform: translateX(120%);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.toast.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.toast::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+}
+
+.toast-success::before {
+    background: #00ffff;
+}
+
+.toast-error::before {
+    background: #850505;
+}
+
+.toast-icon {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toast-success .toast-icon {
+    color: #00ffff;
+}
+
+.toast-error .toast-icon {
+    color: #ff4d4d;
+}
+
+.toast-content {
+    flex-grow: 1;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.toast-close {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 0.2s;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.toast-close:hover {
+    color: #ffffff;
+}
+
+/* Scramble Text Heading Glow Animation */
+.scramble-char {
+    display: inline-block;
+    transition: color 0.1s ease;
+}
+
+.scramble-char.glow {
+    color: #00ffff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.4);
+}

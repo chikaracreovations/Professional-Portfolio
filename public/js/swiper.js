@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("portfolioDataLoaded", function () {
   // Initialize Swiper and make it globally accessible
   window.swiper = new Swiper('.swiper-container', {
     autoHeight: true, // Adjust height dynamically
@@ -42,41 +42,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Category filter
   const filterSelect = document.getElementById('categoryFilter');
-  const swiperSlides = document.querySelectorAll('.swiper-slide');
 
   filterSelect.addEventListener('change', function () {
     const selectedCategory = this.value;
+    const swiperSlides = document.querySelectorAll('.swiper-slide');
 
     swiperSlides.forEach(slide => {
-      const category = slide.getAttribute('data-category');
-      if (selectedCategory === 'all' || category === selectedCategory) {
-        slide.style.display = ''; // show
+      const slideCategory = slide.getAttribute('data-category');
+
+      if (selectedCategory === 'all' || slideCategory === selectedCategory) {
+        slide.style.display = 'block';
       } else {
-        slide.style.display = 'none'; // hide
+        slide.style.display = 'none';
       }
     });
 
-    // Update Swiper so it recalculates
     swiper.update();
   });
 });
 
-const heading = document.getElementById('scramble-heading');
-const originalText = heading.textContent;
+// ==========================================================================
+// Falling Letters Effect for Subheadline
+// ==========================================================================
 
-// Wrap each letter in a span
-heading.innerHTML = originalText.split('')
-  .map(char => `<span>${char}</span>`)
-  .join('');
+document.addEventListener("DOMContentLoaded", () => {
+  const heading = document.getElementById('scramble-heading');
+  if (heading) {
+    const originalText = heading.textContent;
 
-const letters = heading.querySelectorAll('span');
+    // Wrap each letter in a span, converting spaces to &nbsp; to prevent collapse in inline-block
+    heading.innerHTML = originalText.split('')
+      .map(char => `<span>${char === ' ' ? '&nbsp;' : char}</span>`)
+      .join('');
 
-function fallLetters() {
-  letters.forEach((span, i) => {
-    setTimeout(() => {
-      span.classList.add('fall');
-    }, i * 100); // delay between each letter falling
-  });
-}
+    const letters = heading.querySelectorAll('span');
 
-fallLetters();
+    function fallLetters() {
+      letters.forEach((span, i) => {
+        setTimeout(() => {
+          span.classList.add('fall');
+        }, i * 100); // delay between each letter falling
+      });
+    }
+
+    fallLetters();
+  }
+});

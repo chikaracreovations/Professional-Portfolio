@@ -1,0 +1,67 @@
+{
+  "skills": [
+    {
+      "title": "Data Structures & Algorithms (DSA)",
+      "description": "Solid foundation in computational thinking, complexity analysis, and Object-Oriented Programming (OOP) concepts. Experienced in solving core algorithmic challenges and designing optimized data pipelines in Python, C++, and Java."
+    },
+    {
+      "title": "AI & Machine Learning Foundations",
+      "description": "Focusing on integrating intelligent behaviors into standard web systems. Practical experience with Python data packages (NumPy, Pandas), LLM API orchestration (Mistral, DeepSeek via OpenRouter platforms), prompt engineering, and voice assistant modules."
+    },
+    {
+      "title": "Full-Stack Web & Cloud Backend",
+      "description": "Designing high-fidelity, responsive client interfaces with custom glassmorphism styling and event-driven JavaScript architectures. Proficient in integrating Serverless cloud databases (Firebase Firestore) and third-party Web APIs (Razorpay, EmailJS)."
+    },
+    {
+      "title": "CSE Core & Developer Tooling",
+      "bullets": [
+        "Version Control: Version management, branch operations, and hosting projects via Git and GitHub.",
+        "Database Management: Working knowledge of NoSQL structures, document schemas, and CRUD transaction operations.",
+        "Conversational AI: Experience implementing browser Web Speech API for voice synthesis and wake-word triggers.",
+        "Software Engineering: Clean-code design principles, asynchronous callback patterns, and modular dynamic loaders."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Journaling Website",
+      "category": "web-development",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvOyeizDhwsYT6zuwrxvk1TjfJqI0YqT1lmQ&usqp=CAU",
+      "description": "A personal journal website where users can log their thoughts and reflections securely. This project utilizes Firebase authentication and Firestore for data storage.",
+      "technologies": "<p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Google firebase</p><br>",
+      "url": "https://chikaracreovations.github.io/Reflectly-A-Calming-Journal/index.html"
+    },
+    {
+      "title": "The Demo Store",
+      "category": "web-development",
+      "image": "images/ds.jpg",
+      "description": "A fully functional, customizable e-commerce platform designed for showcasing in a developer portfolio. Built with Firebase for backend and order management, integrated with Razorpay for secure payments, and uses EmailJS to automate order confirmation emails.",
+      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML, CSS, JavaScript<br><strong>UI Libraries:</strong> Swiper.js, GSAP, FontAwesome<br><strong>Backend:</strong> Firebase<br><strong>Payments:</strong> Razorpay<br><strong>Email:</strong> EmailJS</p>",
+      "url": "https://chikaracreovations.github.io/The-Demo-Store/public/index.html"
+    },
+    {
+      "title": "Naira - Virtual AI Assistant",
+      "category": "web-development",
+      "image": "https://i.pinimg.com/originals/ae/d1/1d/aed11d6975231b91c8e992c02b8376da.gif",
+      "description": "Naira is a web-based AI assistant that supports both voice and text interaction. Featuring a futuristic UI with a glowing core animation, it enables real-time, intelligent conversations using Mistral-7B-Instruct via OpenRouter.",
+      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML, CSS, JavaScript<br><strong>UI Libraries:</strong> Web Speech API, FontAwesome, Swiper.js<br><strong>AI Backend:</strong> DeepSeek V3 0324 (OpenRouter)<br><strong>Backend & Hosting:</strong> Node.js (Cloudflare), Netlify<br><strong>Version Control:</strong> GitHub</p>",
+      "url": "https://fridayaiassistant.netlify.app"
+    },
+    {
+      "title": "Doodle Board",
+      "category": "web-development",
+      "image": "images/db.jpg",
+      "description": "A lightweight, browser-based whiteboard application designed for solo use. It allows users to draw, erase, save, and load sketches directly within their browser, offering a smooth, responsive interface optimized for both mouse and touch input.",
+      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML, CSS, JavaScript<br><strong>Canvas & Graphics:</strong> HTML5 Canvas API<br><strong>State Management:</strong> Vanilla JavaScript (custom undo/redo stack)<br><strong>File Handling:</strong> FileReader API, Canvas toDataURL<br><strong>Touch Support:</strong> Touch Events API</p>",
+      "url": "https://chikaracreovations.github.io/Doodle-Board/index.html"
+    },
+    {
+      "title": "Collaborative Whiteboard",
+      "category": "web-development",
+      "image": "images/cbwb.jpg",
+      "description": "A real-time collaborative whiteboard enabling multiple users to draw simultaneously on a shared canvas. Designed for smooth, low-latency drawing experiences across devices using WebSockets for live communication.",
+      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML, CSS, JavaScript<br><strong>Backend:</strong> Firebase<br><strong>Payments:</strong> Razorpay<br><strong>Email:</strong> EmailJS</p>",
+      "url": "https://github.com/chikaracreovations"
+    }
+  ]
+}
