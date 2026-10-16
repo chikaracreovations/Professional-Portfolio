@@ -32,12 +32,12 @@
       "url": "https://chikaracreovations.github.io/Reflectly-A-Calming-Journal/index.html"
     },
     {
-      "title": "The Demo Store",
+      "title": "The Aura Store",
       "category": "web-development",
-      "image": "images/ds.jpg",
+      "image": "images/ds1.jpg",
       "description": "A fully functional, customizable e-commerce platform designed for showcasing in a developer portfolio. Built with Firebase for backend and order management, integrated with Razorpay for secure payments, and uses EmailJS to automate order confirmation emails.",
       "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML, CSS, JavaScript<br><strong>UI Libraries:</strong> Swiper.js, GSAP, FontAwesome<br><strong>Backend:</strong> Firebase<br><strong>Payments:</strong> Razorpay<br><strong>Email:</strong> EmailJS</p>",
-      "url": "https://chikaracreovations.github.io/The-Demo-Store/public/index.html"
+      "url": "https://auraaaa-store.netlify.app/"
     },
     {
       "title": "Naira - Virtual AI Assistant",
@@ -61,7 +61,7 @@
       "image": "images/cbwb.jpg",
       "description": "A real-time collaborative whiteboard enabling multiple users to draw simultaneously on a shared canvas. Designed for smooth, low-latency drawing experiences across devices using WebSockets for live communication.",
       "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML, CSS, JavaScript<br><strong>Backend:</strong> Firebase<br><strong>Payments:</strong> Razorpay<br><strong>Email:</strong> EmailJS</p>",
-      "url": "https://github.com/chikaracreovations"
+      "url": "https://chikaracreovations.github.io/Collaborative-Doodle-Board/main.html"
     }
   ]
 }
