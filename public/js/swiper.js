@@ -1,37 +1,14 @@
 document.addEventListener("portfolioDataLoaded", function () {
   // Initialize Swiper and make it globally accessible
-  window.swiper = new Swiper('.swiper-container', {
-    autoHeight: true, // Adjust height dynamically
-    loop: true, // Enable looping
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    slidesPerView: 1,
-    spaceBetween: 200,
-    breakpoints: {
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-    }
-  });
+  initOrUpdateSwiper();
 
-  // Tech modal open
-  document.querySelectorAll(".tech-btn").forEach(button => {
-    button.addEventListener("click", function () {
-      const techDetails = this.getAttribute("data-technologies");
-      document.getElementById("techModalBody").innerHTML = techDetails;
-      document.getElementById("techModal").style.display = "block";
+  // Tech modal close
+  const closeBtn = document.querySelector(".modal .close");
+  if (closeBtn) {
+    closeBtn.addEventListener("click", function () {
+      document.getElementById("techModal").style.display = "none";
     });
-  });
-
-  // Modal close
-  document.querySelector(".modal .close").addEventListener("click", function () {
-    document.getElementById("techModal").style.display = "none";
-  });
+  }
 
   // Close modal on outside click
   window.addEventListener("click", function (event) {
@@ -42,27 +19,50 @@ document.addEventListener("portfolioDataLoaded", function () {
 
   // Category filter
   const filterSelect = document.getElementById('categoryFilter');
-
-  filterSelect.addEventListener('change', function () {
-    const selectedCategory = this.value;
-    const swiperSlides = document.querySelectorAll('.swiper-slide');
-
-    swiperSlides.forEach(slide => {
-      const slideCategory = slide.getAttribute('data-category');
-
-      if (selectedCategory === 'all' || slideCategory === selectedCategory) {
-        slide.style.display = 'block';
-      } else {
-        slide.style.display = 'none';
+  if (filterSelect) {
+    filterSelect.addEventListener('change', function () {
+      const selectedCategory = this.value;
+      if (window.renderProjects && window.allProjects) {
+        const filtered = (selectedCategory === 'all')
+          ? window.allProjects
+          : window.allProjects.filter(p => p.category === selectedCategory);
+        
+        window.renderProjects(filtered);
+        initOrUpdateSwiper();
       }
     });
-
-    swiper.update();
-  });
+  }
 });
 
+function initOrUpdateSwiper() {
+  if (window.swiper && typeof window.swiper.destroy === 'function') {
+    window.swiper.destroy(true, true);
+  }
+
+  window.swiper = new Swiper('.swiper-container', {
+    autoHeight: true,
+    loop: false,
+    observer: true,
+    observeParents: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    slidesPerView: 1,
+    spaceBetween: 24,
+    breakpoints: {
+      768: { slidesPerView: 2, spaceBetween: 24 },
+      1024: { slidesPerView: 3, spaceBetween: 24 },
+    }
+  });
+}
+
 // ==========================================================================
-// Falling Letters Effect for Subheadline
+// Falling Letters Effect for Subheadline (Deliberate Glitch Fall Animation)
 // ==========================================================================
 
 document.addEventListener("DOMContentLoaded", () => {

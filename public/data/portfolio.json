@@ -26,42 +26,97 @@
     {
       "title": "Journaling Website",
       "category": "web-development",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvOyeizDhwsYT6zuwrxvk1TjfJqI0YqT1lmQ&usqp=CAU",
+      "image": "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=800&q=80",
       "description": "A personal journal website where users can log their thoughts and reflections securely. This project utilizes Firebase authentication and Firestore for data storage.",
-      "technologies": "<p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Google firebase</p><br>",
-      "url": "https://chikaracreovations.github.io/Reflectly-A-Calming-Journal/index.html"
+      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML5, CSS3, JavaScript<br><strong>Backend & Auth:</strong> Google Firebase (Authentication & Firestore)</p>",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Firebase Auth",
+        "Firestore"
+      ],
+      "url": "https://chikaracreovations.github.io/Reflectly-A-Calming-Journal/index.html",
+      "github": "https://github.com/chikaracreovations/Reflectly-A-Calming-Journal"
     },
     {
       "title": "The Aura Store",
       "category": "web-development",
       "image": "images/ds1.jpg",
       "description": "A fully functional, customizable e-commerce platform designed for showcasing in a developer portfolio. Built with Firebase for backend and order management, integrated with Razorpay for secure payments, and uses EmailJS to automate order confirmation emails.",
-      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML, CSS, JavaScript<br><strong>UI Libraries:</strong> Swiper.js, GSAP, FontAwesome<br><strong>Backend:</strong> Firebase<br><strong>Payments:</strong> Razorpay<br><strong>Email:</strong> EmailJS</p>",
-      "url": "https://auraaaa-store.netlify.app/"
+      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML, CSS, JavaScript<br><strong>UI Libraries:</strong> Swiper.js, GSAP, FontAwesome<br><strong>Backend:</strong> Firebase Firestore<br><strong>Payments:</strong> Razorpay API<br><strong>Email:</strong> EmailJS API</p>",
+      "tags": [
+        "JavaScript",
+        "Firebase",
+        "Razorpay",
+        "EmailJS",
+        "Swiper.js"
+      ],
+      "url": "https://auraaaa-store.netlify.app/",
+      "github": "https://github.com/chikaracreovations"
+    },
+    {
+      "title": "Agentic Travel Planner",
+      "category": "python",
+      "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80",
+      "description": "A production-ready autonomous travel agent and itinerary planner. Powered by multi-LLM orchestration and Model Context Protocol (MCP), it searches real flights and hotels via Amadeus, checks weather via Open-Meteo, generates automated car rental bookings, and handles checkout sessions.",
+      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Backend & Architecture:</strong> Python, FastAPI, Uvicorn, Model Context Protocol (MCP)<br><strong>LLM Orchestration:</strong> Google Gemini, Anthropic Claude, OpenAI GPT-4o<br><strong>APIs & Services:</strong> Amadeus Self-Service API, Open-Meteo, Stripe Checkout<br><strong>Frontend:</strong> HTML5, Modern CSS, JavaScript (Streaming NDJSON Chat UI)<br><strong>DevOps & Deployment:</strong> Docker, Render CI/CD</p>",
+      "tags": [
+        "Python",
+        "FastAPI",
+        "MCP",
+        "Gemini",
+        "Claude",
+        "Docker"
+      ],
+      "url": "https://agentic-travel-planner-xlnc.onrender.com/",
+      "github": "https://github.com/chikaracreovations"
     },
     {
       "title": "Naira - Virtual AI Assistant",
-      "category": "web-development",
-      "image": "https://i.pinimg.com/originals/ae/d1/1d/aed11d6975231b91c8e992c02b8376da.gif",
+      "category": "python",
+      "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
       "description": "Naira is a web-based AI assistant that supports both voice and text interaction. Featuring a futuristic UI with a glowing core animation, it enables real-time, intelligent conversations using Mistral-7B-Instruct via OpenRouter.",
-      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML, CSS, JavaScript<br><strong>UI Libraries:</strong> Web Speech API, FontAwesome, Swiper.js<br><strong>AI Backend:</strong> DeepSeek V3 0324 (OpenRouter)<br><strong>Backend & Hosting:</strong> Node.js (Cloudflare), Netlify<br><strong>Version Control:</strong> GitHub</p>",
-      "url": "https://fridayaiassistant.netlify.app"
+      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML, CSS, JavaScript<br><strong>UI Libraries:</strong> Web Speech API, FontAwesome, Swiper.js<br><strong>AI Backend:</strong> DeepSeek V3 / Mistral-7B (OpenRouter)<br><strong>Backend & Hosting:</strong> Node.js, Cloudflare, Netlify<br><strong>Version Control:</strong> GitHub</p>",
+      "tags": [
+        "AI / LLM",
+        "Web Speech API",
+        "OpenRouter",
+        "Node.js",
+        "JavaScript"
+      ],
+      "url": "https://fridayaiassistant.netlify.app",
+      "github": "https://github.com/chikaracreovations"
     },
     {
       "title": "Doodle Board",
-      "category": "web-development",
+      "category": "tools",
       "image": "images/db.jpg",
       "description": "A lightweight, browser-based whiteboard application designed for solo use. It allows users to draw, erase, save, and load sketches directly within their browser, offering a smooth, responsive interface optimized for both mouse and touch input.",
       "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML, CSS, JavaScript<br><strong>Canvas & Graphics:</strong> HTML5 Canvas API<br><strong>State Management:</strong> Vanilla JavaScript (custom undo/redo stack)<br><strong>File Handling:</strong> FileReader API, Canvas toDataURL<br><strong>Touch Support:</strong> Touch Events API</p>",
-      "url": "https://chikaracreovations.github.io/Doodle-Board/index.html"
+      "tags": [
+        "HTML5 Canvas",
+        "Vanilla JS",
+        "State Management",
+        "Touch Events"
+      ],
+      "url": "https://chikaracreovations.github.io/Doodle-Board/index.html",
+      "github": "https://github.com/chikaracreovations/Doodle-Board"
     },
     {
       "title": "Collaborative Whiteboard",
-      "category": "web-development",
+      "category": "tools",
       "image": "images/cbwb.jpg",
-      "description": "A real-time collaborative whiteboard enabling multiple users to draw simultaneously on a shared canvas. Designed for smooth, low-latency drawing experiences across devices using WebSockets for live communication.",
-      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML, CSS, JavaScript<br><strong>Backend:</strong> Firebase<br><strong>Payments:</strong> Razorpay<br><strong>Email:</strong> EmailJS</p>",
-      "url": "https://chikaracreovations.github.io/Collaborative-Doodle-Board/main.html"
+      "description": "A real-time collaborative whiteboard enabling multiple users to draw simultaneously on a shared canvas. Designed for smooth, low-latency drawing experiences across devices using WebSockets and Firebase Realtime Database for live communication.",
+      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML5, CSS3, JavaScript<br><strong>Canvas:</strong> HTML5 Canvas 2D Context<br><strong>Real-Time Sync:</strong> Firebase Realtime Database / WebSockets<br><strong>Multi-User State:</strong> Event-driven stroke synchronization</p>",
+      "tags": [
+        "HTML5 Canvas",
+        "Firebase Realtime",
+        "WebSockets",
+        "Multiplayer"
+      ],
+      "url": "https://chikaracreovations.github.io/Collaborative-Doodle-Board/index.html",
+      "github": "https://github.com/chikaracreovations/Collaborative-Doodle-Board"
     }
   ]
 }
