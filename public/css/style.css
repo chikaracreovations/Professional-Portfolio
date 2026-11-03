@@ -263,73 +263,12 @@ header::before {
     }
 }
 
-.hero-name-wrapper {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 12px;
-}
-
-.hero-name-glow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 80%;
-    background: radial-gradient(ellipse at center, rgba(133, 5, 5, 0.45) 0%, rgba(255, 77, 77, 0.18) 45%, transparent 75%);
-    filter: blur(28px);
-    z-index: 0;
-    pointer-events: none;
-    opacity: 0.85;
-    animation: nameAuraPulse 4s ease-in-out infinite alternate;
-}
-
-@keyframes nameAuraPulse {
-    0% {
-        transform: translate(-50%, -50%) scale(0.92);
-        opacity: 0.7;
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1.15);
-        opacity: 1;
-    }
-}
-
 .hero-name {
-    font-size: clamp(3.2rem, 7vw, 4.6rem);
-    font-weight: 800;
-    font-family: 'Space Grotesk', sans-serif !important;
-    letter-spacing: -0.035em;
-    line-height: 1.1;
-    margin-bottom: 0;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    background: linear-gradient(125deg, #ffffff 0%, #f1f5f9 25%, #ff4d4d 55%, #ff1a35 75%, #ffffff 100%);
-    background-size: 220% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: heroNameShimmer 8s linear infinite;
-    filter: drop-shadow(0 0 24px rgba(255, 51, 68, 0.35)) drop-shadow(0 10px 20px rgba(0, 0, 0, 0.8));
-    cursor: default;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
-}
-
-.hero-name:hover {
-    transform: translateY(-2px) scale(1.02);
-    filter: drop-shadow(0 0 38px rgba(255, 77, 77, 0.65)) drop-shadow(0 14px 28px rgba(0, 0, 0, 0.95));
-}
-
-@keyframes heroNameShimmer {
-    0% {
-        background-position: 0% center;
-    }
-    50% {
-        background-position: 100% center;
-    }
-    100% {
-        background-position: 200% center;
-    }
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 12px;
+    letter-spacing: -0.03em;
 }
 
 .hero-tagline {
@@ -370,24 +309,6 @@ h3 {
     color: white;
     margin-top: 10px;
     letter-spacing: 0.5px;
-}
-
-.hero-intro-text {
-    font-size: 1.05rem;
-    color: #c4c4cb;
-    max-width: 620px;
-    margin: 16px auto 14px;
-    line-height: 1.65;
-    font-weight: 400;
-    letter-spacing: 0.01em;
-}
-
-@media (max-width: 600px) {
-    .hero-intro-text {
-        font-size: 0.95rem;
-        padding: 0 10px;
-        margin: 12px auto 10px;
-    }
 }
 
 /* ==========================================================================
