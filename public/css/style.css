@@ -11,6 +11,9 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -18,6 +21,8 @@ body {
     background-color: #000000;
     color: #ffffff;
     line-height: 1.6;
+    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -2793,4 +2798,330 @@ footer,
 .spatial-tilt-active .stat-footer-chips {
   transform: translateZ(16px);
   transition: transform 0.25s ease;
+}
+
+/* ==========================================================================
+   MOBILE RESPONSIVENESS & TOUCH ADAPTATION (SMARTPHONES & TABLETS)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* Mobile Hamburger Nav Drawer Enhancement */
+  .mobile-nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+
+  .navbar ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+    padding: 16px 20px;
+    gap: 8px;
+    z-index: 9999;
+  }
+
+  .navbar ul.open {
+    display: flex;
+  }
+
+  .navbar ul li {
+    width: 100%;
+  }
+
+  .navbar ul li a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 14px;
+    font-size: 1.05rem;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .navbar ul li a:hover,
+  .navbar ul li a:active {
+    background: rgba(133, 5, 5, 0.2);
+    color: #ff4d4d;
+  }
+
+  /* General Section Spacing */
+  section {
+    padding: 48px 16px;
+    margin: 16px auto;
+  }
+
+  h2 {
+    font-size: clamp(1.7rem, 6vw, 2.2rem);
+  }
+
+  .section-subtitle {
+    font-size: 0.88rem;
+    margin-bottom: 22px;
+    padding: 0 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Hero Section Mobile Adaptation */
+  .hero {
+    padding: 65px 16px 70px;
+    min-height: auto;
+  }
+
+  .hero-name {
+    font-size: clamp(2.2rem, 8.5vw, 2.85rem);
+    word-break: break-word;
+    margin-bottom: 8px;
+  }
+
+  #scramble-heading {
+    font-size: clamp(0.98rem, 4vw, 1.15rem);
+    word-break: break-word;
+  }
+
+  .hero-stickman-container {
+    max-width: 210px;
+    margin: 16px auto 4px;
+  }
+
+  .stickman-bubble {
+    font-size: 0.72rem;
+    padding: 5px 10px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto 0;
+    gap: 10px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+    min-height: 46px;
+  }
+
+  .hero-socials {
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .hero-socials a {
+    font-size: 1.3rem;
+  }
+
+  /* About Me Section */
+  .about-card {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-name {
+    font-size: 1.3rem;
+  }
+
+  .about-lead {
+    font-size: 0.98rem;
+    padding-left: 10px;
+  }
+
+  .about-highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .highlight-item {
+    padding: 12px 14px;
+  }
+
+  /* Coding Stats Mobile */
+  .stats-grid {
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .stat-card {
+    padding: 18px 14px;
+  }
+
+  .stat-card-title h3 {
+    font-size: 1.05rem;
+  }
+
+  .stat-platform-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .leetcode-overview {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .stat-circle-box {
+    padding: 10px 14px;
+  }
+
+  .stat-big-number {
+    font-size: 1.65rem;
+  }
+
+  .github-stats-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .gh-mini-stat {
+    padding: 8px 3px;
+  }
+
+  .gh-stat-val {
+    font-size: 1.12rem;
+  }
+
+  .gh-stat-lbl {
+    font-size: 0.58rem;
+    letter-spacing: 0.2px;
+  }
+
+  .gh-languages-box {
+    padding: 10px 12px;
+  }
+
+  .gh-lang-tags {
+    gap: 5px;
+  }
+
+  .gh-lang-pill {
+    font-size: 0.68rem;
+    padding: 2px 7px;
+  }
+
+  .stat-footer-chips {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .stat-cta-btn {
+    min-height: 44px;
+    padding: 10px 14px;
+    font-size: 0.82rem;
+  }
+
+  /* Swiper / Portfolio Mobile */
+  .portfolio-img-wrap {
+    height: 175px;
+  }
+
+  .portfolio-content {
+    padding: 16px 14px;
+  }
+
+  .portfolio-buttons {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .portfolio-buttons .btn {
+    width: 100%;
+    justify-content: center;
+    min-height: 40px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+
+  /* Certificates Mobile */
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    width: 100%;
+    gap: 14px;
+  }
+
+  .certificates-grid img {
+    height: 180px;
+  }
+
+  /* Ready to Launch Contact Card Mobile */
+  .launch-section {
+    padding: 3rem 0.8rem;
+  }
+
+  .contact-card {
+    padding: 1.6rem 1.1rem;
+    border-radius: 14px;
+  }
+
+  .contact-title {
+    font-size: clamp(1.5rem, 6.2vw, 2.1rem);
+  }
+
+  .contact-desc {
+    font-size: 0.95rem;
+  }
+
+  .contact-meta-list {
+    gap: 0.9rem;
+    margin: 1.4rem 0;
+  }
+
+  .meta-val,
+  .meta-link {
+    font-size: 0.88rem;
+    word-break: break-all;
+  }
+
+  .social-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* Form Inputs (16px to prevent iOS Safari auto-zoom) */
+  .cyber-input {
+    font-size: 16px !important;
+    padding: 12px 14px;
+    min-height: 46px;
+  }
+
+  .btn-launch-submit {
+    min-height: 48px;
+    font-size: 0.88rem;
+    padding: 12px 20px;
+  }
+
+  /* Review Modal */
+  .custom-modal-content {
+    width: 94%;
+    padding: 24px 16px;
+  }
+
+  .modal-title {
+    font-size: 1.4rem;
+  }
 }

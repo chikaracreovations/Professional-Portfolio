@@ -33,7 +33,8 @@
     powerPreference: 'high-performance'
   });
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  const maxPixelRatio = window.innerWidth < 768 ? 1.5 : 2;
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, maxPixelRatio));
 
   // -------------------------------------------------------------------------
   // 1. Interactive 3D Particle Cloud (Crimson & Diamond White)

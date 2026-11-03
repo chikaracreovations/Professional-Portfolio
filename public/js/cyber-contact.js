@@ -4,6 +4,9 @@
 
 // 1. 3D Perspective Tilt & Cursor-Following Radial Glow
 function initReadyToLaunchTilt() {
+  const isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (!isFinePointer) return;
+
   const card = document.querySelector('.contact-card[data-tilt]');
   if (!card) return;
 

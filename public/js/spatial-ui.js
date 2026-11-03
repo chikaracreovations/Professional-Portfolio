@@ -49,7 +49,7 @@
   }
 
   // -------------------------------------------------------------------------
-  // 2. Spatial 3D Perspective Tilt on Interactive Cards
+  // 2. Spatial 3D Perspective Tilt on Interactive Cards (Desktop/Fine Pointer)
   // -------------------------------------------------------------------------
   const spatialSelectors = [
     '.profile-card',
@@ -63,7 +63,7 @@
   ];
 
   function attachSpatialTilt(card) {
-    if (card._hasSpatialTilt) return;
+    if (!isFinePointer || card._hasSpatialTilt) return;
     card._hasSpatialTilt = true;
 
     // Ensure 3D transform style
