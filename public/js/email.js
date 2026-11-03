@@ -1,9 +1,16 @@
-document.querySelector("form").addEventListener("submit", async function(event) {
+const contactFormEl = document.querySelector("#contactForm");
+if (contactFormEl) {
+  contactFormEl.addEventListener("submit", async function(event) {
   event.preventDefault();
 
-  const name = document.querySelector("#name").value.trim();
-  const email = document.querySelector("#email").value.trim();
-  const message = document.querySelector("#message").value.trim();
+  const nameInput = document.querySelector("#name");
+  const emailInput = document.querySelector("#email");
+  const messageInput = document.querySelector("#message");
+  if (!nameInput || !emailInput || !messageInput) return;
+
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+  const message = messageInput.value.trim();
   const submitBtn = event.target.querySelector("button[type='submit']");
   
   if (!name || !email || !message) {
@@ -100,3 +107,4 @@ document.querySelector("form").addEventListener("submit", async function(event) 
     }
   }
 });
+}

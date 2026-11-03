@@ -24,22 +24,6 @@
   ],
   "projects": [
     {
-      "title": "Journaling Website",
-      "category": "web-development",
-      "image": "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=800&q=80",
-      "description": "A personal journal website where users can log their thoughts and reflections securely. This project utilizes Firebase authentication and Firestore for data storage.",
-      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML5, CSS3, JavaScript<br><strong>Backend & Auth:</strong> Google Firebase (Authentication & Firestore)</p>",
-      "tags": [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Firebase Auth",
-        "Firestore"
-      ],
-      "url": "https://chikaracreovations.github.io/Reflectly-A-Calming-Journal/index.html",
-      "github": "https://github.com/chikaracreovations/Reflectly-A-Calming-Journal"
-    },
-    {
       "title": "The Aura Store",
       "category": "web-development",
       "image": "images/ds1.jpg",
@@ -73,6 +57,37 @@
       "github": "https://github.com/chikaracreovations"
     },
     {
+      "title": "Collaborative Whiteboard",
+      "category": "tools",
+      "image": "images/cbwb.jpg",
+      "description": "A real-time collaborative whiteboard enabling multiple users to draw simultaneously on a shared canvas. Designed for smooth, low-latency drawing experiences across devices using WebSockets and Firebase Realtime Database for live communication.",
+      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML5, CSS3, JavaScript<br><strong>Canvas:</strong> HTML5 Canvas 2D Context<br><strong>Real-Time Sync:</strong> Firebase Realtime Database / WebSockets<br><strong>Multi-User State:</strong> Event-driven stroke synchronization</p>",
+      "tags": [
+        "HTML5 Canvas",
+        "Firebase Realtime",
+        "WebSockets",
+        "Multiplayer"
+      ],
+      "url": "https://chikaracreovations.github.io/Collaborative-Doodle-Board/index.html",
+      "github": "https://github.com/chikaracreovations/Collaborative-Doodle-Board"
+    },
+    {
+      "title": "Journaling Website",
+      "category": "web-development",
+      "image": "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=800&q=80",
+      "description": "A personal journal website where users can log their thoughts and reflections securely. This project utilizes Firebase authentication and Firestore for data storage.",
+      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML5, CSS3, JavaScript<br><strong>Backend & Auth:</strong> Google Firebase (Authentication & Firestore)</p>",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Firebase Auth",
+        "Firestore"
+      ],
+      "url": "https://chikaracreovations.github.io/Reflectly-A-Calming-Journal/index.html",
+      "github": "https://github.com/chikaracreovations/Reflectly-A-Calming-Journal"
+    },
+    {
       "title": "Naira - Virtual AI Assistant",
       "category": "python",
       "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
@@ -102,21 +117,6 @@
       ],
       "url": "https://chikaracreovations.github.io/Doodle-Board/index.html",
       "github": "https://github.com/chikaracreovations/Doodle-Board"
-    },
-    {
-      "title": "Collaborative Whiteboard",
-      "category": "tools",
-      "image": "images/cbwb.jpg",
-      "description": "A real-time collaborative whiteboard enabling multiple users to draw simultaneously on a shared canvas. Designed for smooth, low-latency drawing experiences across devices using WebSockets and Firebase Realtime Database for live communication.",
-      "technologies": "<p><strong>Technologies Used:</strong><br><strong>Frontend:</strong> HTML5, CSS3, JavaScript<br><strong>Canvas:</strong> HTML5 Canvas 2D Context<br><strong>Real-Time Sync:</strong> Firebase Realtime Database / WebSockets<br><strong>Multi-User State:</strong> Event-driven stroke synchronization</p>",
-      "tags": [
-        "HTML5 Canvas",
-        "Firebase Realtime",
-        "WebSockets",
-        "Multiplayer"
-      ],
-      "url": "https://chikaracreovations.github.io/Collaborative-Doodle-Board/index.html",
-      "github": "https://github.com/chikaracreovations/Collaborative-Doodle-Board"
     }
   ]
 }
